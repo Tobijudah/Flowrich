@@ -61,6 +61,10 @@ input {
    right: -8.8%;
 }
 
+.sm {
+   display: none;
+}
+
 .container {
    width: 85%;
    margin: 0 auto;
@@ -372,13 +376,198 @@ footer .content .text-grid .text .social img {
 }
 
 
-@media only screen and (max-width: 960px) {}
+@media only screen and (max-width: 960px) {
+
+   input {
+      width: 100%;
+   }
+
+   #hero nav #nav-list {
+      display: none;
+   }
+
+   #about {
+      height: 500px;
+   }
+
+   #about .text-box {
+      flex: 0.5;
+   }
+
+   #about .image {
+      flex: 0.5;
+   }
+
+   #about .text-box .text {
+      width: 80%;
+      padding-top: 1rem;
+   }
+
+   #me .image {
+      flex: 0.5;
+   }
+
+   #me .text {
+      flex: 0.5;
+   }
+
+   #me .text-box .text {
+      width: 80%;
+      padding: 0;
+   }
+
+   #offer .text-box {
+      padding: 2rem 0;
+   }
+
+   #offer .text-box .text {
+      width: 80%;
+      margin: 0 auto;
+   }
+
+   #clients .grid-box .grid-item p {
+      width: 100%;
+   }
+
+   #contact {
+      background-image: url(../images/about-box.png);
+   }
+
+   #contact .content .text-box {
+      flex: 0.5;
+      padding: 0;
+      padding-top: 3rem;
+   }
+
+   #contact .content .text-box .text{
+      width: 85%;
+   }
+
+   #contact .content .image {
+      flex: 0.5;
+      margin: auto 0;
+   }
+
+   #newsletter .text {
+      padding: 2rem 0;
+      width: 85%;
+      margin: 0 auto;
+   }
+
+   footer {
+      background-position: top left;
+      background-size: cover;
+   }
+
+   footer .content {
+      flex-direction: column;
+      align-items: flex-end;
+      width: 85%;
+   }
+
+   footer .content .image {
+      margin-bottom: 3rem;
+   }
+
+}
 
 
-@media only screen and (max-width: 720px) {}
+@media only screen and (max-width: 710px) {
+
+   body {
+      width: 100vw;
+   }
+
+   .free-image-1 {
+      left: -5.5%;
+   }
+
+   .free-image-2 {
+      right: -5.5%;
+   }
+
+   .sm {
+      display: block;
+   }
+
+   .lg {
+      display: none;
+   }
+
+   .grid-box {
+      grid-template-columns: repeat(2, 1fr);
+   }
+
+   #about {
+      flex-direction: column;
+      height: 100%;
+   }
+
+   #about .text-box .text {
+      width: 85%;
+      padding: 3.1875rem 0;
+      text-align: center;
+   }
+
+   #me {
+      flex-direction: column;
+      text-align: center;
+   }
+
+   #me .text-box {
+      margin-bottom: 5rem;
+   }
+
+   #me .text-box .text {
+      padding: 0;
+      margin: 0 auto;
+      width: 85%;
+   }
+
+   #offer {
+      flex-direction: column;
+   }
+
+   #offer .text-box {
+      padding: 0 4rem;
+   }
+
+   #offer .text-box .text {
+      width: 85%;
+      padding: 3.1875rem 0;
+      text-align: center;
+   }
+
+   footer {
+      background-image: url(../images/footer-image.png);
+      background-position: left center;
+      background-repeat: no-repeat;
+   }
+
+   footer .content {
+      padding: 3rem 0;
+      text-align: right;
+   }
+
+   footer .content .image {
+      margin-bottom: 0;
+   }
+
+   footer .content .text-grid {
+      margin-top: 3rem;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 2.5rem 0;
+   }
+
+   footer .content .text-grid .text .social img {
+      margin-left: 1.5rem;
+      margin-right: 0;
+   }
+
+}
 
 
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 600px) {
 
    body {
       width: 100vw;
@@ -399,54 +588,26 @@ footer .content .text-grid .text .social img {
       background-repeat: no-repeat;
    }
 
-   #hero nav #nav-list {
-      display: none;
-   }
-
-   #about {
-      flex-direction: column;
-      height: 100%;
-   }
-
    #about .text-box .text {
-      width: 100%;
-      padding: 3.1875rem 0;
-      text-align: center;
-   }
-
-   #me {
-      flex-direction: column;
-      text-align: center;
-   }
-
-   #me .text-box {
-      margin-bottom: 5rem;
-   }
-
-   #me .text-box .text {
-      padding: 0;
-   }
-
-   #offer {
-      flex-direction: column;
+      width: 85%;
    }
 
    #offer .text-box {
-      padding: 0 4rem;
+      padding: 0;
    }
 
    #offer .text-box .text {
-      width: 100%;
-      padding: 3.1875rem 0;
-      text-align: center;
+      width: 85%;
+      margin: 0 auto;
    }
 
-   input {
-      width: 100%;
+   #contact input {
+      width: 70%;
    }
 
    #contact {
       background-image: none;
+      padding-bottom: 0;
    }
 
    #contact .content {
@@ -478,21 +639,18 @@ footer .content .text-grid .text .social img {
 
    footer {
       background-image: url(../images/footer-image-sm.png);
-      background-size: cover;
       background-position: left;
-      background-repeat: no-repeat;
    }
 
    footer .content {
-      flex-direction: column;
-      padding: 3rem 0;
       width: 60%;
+      align-items: start;
+      text-align: left;
    }
 
-   footer .content .text-grid {
-      margin-top: 3rem;
-      grid-template-columns: repeat(1, 1fr);
-      gap: 2.5rem 0;
+   footer .content .text-grid .text .social img {
+      margin-right: 1.5rem;
+      margin-left: 0;
    }
 
 }
