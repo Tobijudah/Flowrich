@@ -6,6 +6,11 @@
    color: #324119;
 }
 
+body {
+   max-width: 1440px;
+   margin: 0 auto;
+}
+
 h1 {
    font-family: 'Cormorant Upright', serif;
    font-size: 4rem;
@@ -81,6 +86,8 @@ input {
    background-position: top;
    background-repeat: no-repeat;
    height: 95vh;
+   max-height: 900px;
+   min-height: 500px;
 }
 
 #hero nav {
@@ -205,7 +212,7 @@ input {
 #offer .text-box {
    flex: 0.5;
    background-image: url(../images/offer-box.png);
-   background-position: center;
+   background-position: right;
    background-size: cover;
    display: flex;
    flex-direction: column;
@@ -393,7 +400,7 @@ footer .content .text-grid .text .social img {
       text-align: center;
    }
 
-   #offer img, #me img, #about img, #contact img,#shop img{
+   #offer img, #me img, #about img, #contact img,#shop img, #gallery img, #clients img{
       width: 100%;
    }
 
@@ -442,6 +449,7 @@ footer .content .text-grid .text .social img {
    footer .content {
       flex-direction: column;
       padding: 3rem 0;
+      width: 60%;
    }
 
    footer .content .text-grid {
