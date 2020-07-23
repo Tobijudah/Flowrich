@@ -47,6 +47,20 @@ input {
    width: 300px;
 }
 
+.free-image-1 {
+   position: absolute;
+   z-index: -1;
+   top: -12.75rem;
+   left: -8.8%;
+}
+
+.free-image-2 {
+   position: absolute;
+   z-index: -1;
+   top: -5rem;
+   right: -8.8%;
+}
+
 .container {
    width: 85%;
    margin: 0 auto;
@@ -80,10 +94,18 @@ input {
    text-align: center;
 }
 
+#offer img, #me img, #about img, #contact img, #shop .grid-box img, #gallery .grid-box img, #clients img{
+   width: 100%;
+}
+
+.grid-box .grid-item {
+   min-width: 0;
+}
+
 #hero {
    background-image: url(../images/hero-image.png);
    background-size: cover;
-   background-position: top;
+   background-position: top left;
    background-repeat: no-repeat;
    height: 95vh;
    max-height: 900px;
@@ -110,10 +132,14 @@ input {
    font-size: 1.25rem;
 }
 
+#hero .container {
+   height: 100%;
+}
+
 #hero #heading {
    display: flex;
    align-items: center;
-   padding: 6rem 0;
+   height: 60%;
 }
 
 #about {
@@ -167,6 +193,7 @@ input {
 
 #gallery {
    margin: 7rem 0;
+   position: relative;
 }
 
 #gallery h2 {
@@ -183,6 +210,7 @@ input {
 
 #shop {
    margin: 7rem 0;
+   position: relative;
 }
 
 #shop h2 {
@@ -206,7 +234,8 @@ input {
 #offer .image {
    flex: 0.5;
    display: flex;
-   margin-top: auto;
+   /* margin-top: auto; */
+   align-items: center;
 }
 
 #offer .text-box {
@@ -217,7 +246,11 @@ input {
    display: flex;
    flex-direction: column;
    justify-content: center;
-   padding: 0 6.5rem;
+   padding: 5rem 6.5rem;
+}
+
+#offer .text-box .text {
+   width: 75%;
 }
 
 #clients {
@@ -242,7 +275,7 @@ input {
 }
 
 #clients .grid-box .grid-item p {
-   width: 70%;
+   width: 80%;
    margin: 0 auto;
    line-height: 1.5rem;
 }
@@ -250,6 +283,7 @@ input {
 #contact {
    background-image: url(../images/contact-box.png);
    margin: 7rem 0;
+   padding-bottom: 3.5rem;
 }
 
 #contact .content {
@@ -262,7 +296,7 @@ input {
    flex-direction: column;
    justify-content: center;
    padding: 0 4.3125rem;
-   padding-top: 7.125rem;
+   padding-top: 10rem;
 }
 
 #contact .content .text-box .text p {
@@ -314,11 +348,12 @@ footer .content {
 }
 
 footer .content .image {
-   flex: 0.4;
+   flex: 0.35;
+   display: flex;
 }
 
 footer .content .text-grid {
-   flex: 0.6;
+   flex: 0.65;
    display: grid;
    grid-template-columns: repeat(3, 1fr);
 }
@@ -332,12 +367,18 @@ footer .content .text-grid .text h3 {
 }
 
 footer .content .text-grid .text .social img {
-   margin-right: 1.75rem;
+   margin-right: 1.5rem;
+   margin-bottom: 1rem;
 }
 
 
+@media only screen and (max-width: 960px) {}
 
-@media only screen and (max-width: 500px) {
+
+@media only screen and (max-width: 720px) {}
+
+
+@media only screen and (max-width: 540px) {
 
    body {
       width: 100vw;
@@ -398,10 +439,6 @@ footer .content .text-grid .text .social img {
       width: 100%;
       padding: 3.1875rem 0;
       text-align: center;
-   }
-
-   #offer img, #me img, #about img, #contact img,#shop img, #gallery img, #clients img{
-      width: 100%;
    }
 
    input {
