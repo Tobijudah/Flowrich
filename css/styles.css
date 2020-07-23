@@ -1,0 +1,453 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   font-family: 'Raleway', sans-serif;
+   color: #324119;
+}
+
+h1 {
+   font-family: 'Cormorant Upright', serif;
+   font-size: 4rem;
+   font-weight: 500;
+}
+
+h2 {
+   font-family: 'Cormorant Upright', serif;
+   font-size: 3rem;
+   font-weight: 500;
+}
+
+h3 {
+   font-family: 'Cormorant Upright', serif;
+   font-size: 2.25rem;
+   font-weight: 500;
+}
+
+a {
+   text-decoration: none;
+}
+
+li {
+   list-style: none;
+}
+
+input {
+   width: 100%;
+   background: transparent;
+   border: none;
+   border-bottom: 1px solid #000;
+   padding: 0.5rem 0;
+   margin-bottom: 2.25rem;
+   width: 300px;
+}
+
+.container {
+   width: 85%;
+   margin: 0 auto;
+}
+
+.btn {
+   width: fit-content;
+   padding: 1.625rem 3.5rem;
+   border: none;
+   font-size: 1rem;
+}
+
+.btn-green, .item-text-green {
+   background: #F1F8FF;
+}
+
+.btn-pink, .item-text-pink {
+   background: #FBEDE2;
+}
+
+.text-box .text p {
+   margin: 2.75rem 0;
+   line-height: 2.1875rem;
+}
+
+.grid-box {
+   margin-top: 3.25rem;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 7.5rem 1rem;
+   text-align: center;
+}
+
+#hero {
+   background-image: url(../images/hero-image.png);
+   background-size: cover;
+   background-position: top;
+   background-repeat: no-repeat;
+   height: 95vh;
+}
+
+#hero nav {
+   padding: 2.3125rem 0;
+   display: flex;
+}
+
+#hero nav #nav-list {
+   display: inline-flex;
+   margin-left: auto;
+   display: flex;
+   align-items: center;
+}
+
+#hero nav #nav-list li {
+   margin-left: 1.875rem;
+}
+
+#hero nav #nav-list li a {
+   font-size: 1.25rem;
+}
+
+#hero #heading {
+   display: flex;
+   align-items: center;
+   padding: 6rem 0;
+}
+
+#about {
+   display: flex;
+   margin: 7rem 0;
+   height: 659px;
+}
+
+#about .text-box {
+   flex: 0.5625;
+   background-image: url(../images/about-box.png);
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+#about .text-box .text {
+   width: 60%;
+   margin: 0 auto;
+}
+
+#about .text-box .text .btn {
+   margin: 2rem 0;
+}
+
+#about .image {
+   flex: 0.4375;
+   margin: auto;
+}
+
+#me {
+   display: flex;
+   flex-direction: row;
+   margin: 7rem 0;
+}
+
+#me .text-box {
+   flex: 0.5;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+#me .text-box .text {
+   padding: 0 4.25rem;
+}
+
+#me .image {
+   flex: 0.5;
+}
+
+#gallery {
+   margin: 7rem 0;
+}
+
+#gallery h2 {
+   text-align: center;
+}
+
+#gallery .grid-box .grid-item img {
+   margin-bottom: 2rem;
+}
+
+#gallery .grid-box .grid-item h3 {
+   margin-bottom: 1.125rem;
+}
+
+#shop {
+   margin: 7rem 0;
+}
+
+#shop h2 {
+   text-align: center;
+}
+
+#shop .grid-box .grid-item .item-text {
+   margin: 0;
+   padding: 1rem 0;
+}
+
+#shop .grid-box .grid-item .item-text h3 {
+   margin-bottom: 0.9rem;
+}
+
+#offer {
+   display: flex;
+   margin: 7rem 0;
+}
+
+#offer .image {
+   flex: 0.5;
+   display: flex;
+   margin-top: auto;
+}
+
+#offer .text-box {
+   flex: 0.5;
+   background-image: url(../images/offer-box.png);
+   background-position: center;
+   background-size: cover;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   padding: 0 6.5rem;
+}
+
+#clients {
+   background-image: url(../images/clients-box.png);
+   margin: 7rem 0;
+}
+
+#clients h2 {
+   text-align: center;
+}
+
+#clients .content {
+   padding: 3.9rem 0;
+}
+
+#clients .grid-box .grid-item img {
+   margin-bottom: 2rem;
+}
+
+#clients .grid-box .grid-item h3 {
+   margin-bottom: 1.125rem;
+}
+
+#clients .grid-box .grid-item p {
+   width: 70%;
+   margin: 0 auto;
+   line-height: 1.5rem;
+}
+
+#contact {
+   background-image: url(../images/contact-box.png);
+   margin: 7rem 0;
+}
+
+#contact .content {
+   display: flex;
+}
+
+#contact .content .text-box {
+   flex: 0.4;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   padding: 0 4.3125rem;
+   padding-top: 7.125rem;
+}
+
+#contact .content .text-box .text p {
+   margin: 2.25rem 0;
+   line-height: 18px;
+   font-style: italic;
+}
+
+#contact .content .text-box .text .sub-text-box {
+   margin: 2.25rem 0;
+}
+
+#contact .content .text-box .text .sub-text-box p{
+   margin: 0.6rem 0;
+   font-weight: 500;
+}
+
+#contact .content .image {
+   flex: 0.6;
+   display: flex;
+   margin-top: auto;
+}
+
+#newsletter {
+   margin: 7rem 0;
+   background-image: url(../images/newsletter-image.png);
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
+#newsletter .text {
+   padding: 2rem 5.125rem;
+}
+
+#newsletter .text input {
+   margin: 2rem 0;
+}
+
+footer {
+   background-image: url(../images/footer-image.png);
+}
+
+footer .content {
+   display: flex;
+   width: 68%;
+   margin: 0 auto;
+   padding: 8.5rem 0;
+}
+
+footer .content .image {
+   flex: 0.4;
+}
+
+footer .content .text-grid {
+   flex: 0.6;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+}
+
+footer .content .text-grid .text li {
+   margin-bottom: 1.5rem;
+}
+
+footer .content .text-grid .text h3 {
+   margin-bottom: 1rem;
+}
+
+footer .content .text-grid .text .social img {
+   margin-right: 1.75rem;
+}
+
+
+
+@media only screen and (max-width: 500px) {
+
+   body {
+      width: 100vw;
+   }
+
+   .container {
+      width: 90%;
+   }
+
+   .grid-box {
+      grid-template-columns: repeat(1, 1fr);
+   }
+
+   #hero {
+      background-image: url(../images/hero-image-sm.png);
+      background-size: cover;
+      background-position: top;
+      background-repeat: no-repeat;
+   }
+
+   #hero nav #nav-list {
+      display: none;
+   }
+
+   #about {
+      flex-direction: column;
+      height: 100%;
+   }
+
+   #about .text-box .text {
+      width: 100%;
+      padding: 3.1875rem 0;
+      text-align: center;
+   }
+
+   #me {
+      flex-direction: column;
+      text-align: center;
+   }
+
+   #me .text-box {
+      margin-bottom: 5rem;
+   }
+
+   #me .text-box .text {
+      padding: 0;
+   }
+
+   #offer {
+      flex-direction: column;
+   }
+
+   #offer .text-box {
+      padding: 0 4rem;
+   }
+
+   #offer .text-box .text {
+      width: 100%;
+      padding: 3.1875rem 0;
+      text-align: center;
+   }
+
+   #offer img, #me img, #about img, #contact img,#shop img{
+      width: 100%;
+   }
+
+   input {
+      width: 100%;
+   }
+
+   #contact {
+      background-image: none;
+   }
+
+   #contact .content {
+      flex-direction: column;
+      width: inherit;
+   }
+
+   #contact .content .text-box {
+      background-image: url(../images/contact-box-sm.png);
+      width: inherit;
+      padding-top: 4.3125rem;
+   }
+
+   #contact .content .text-box .text {
+      width: 100%;
+      padding: 3.1875rem 0;
+      text-align: center;
+   }
+
+   #newsletter {
+      background-image: url(../images/newsletter-image-sm.png);
+      background-position: top;
+   }
+
+   #newsletter .text {
+      padding: 3rem 1rem;
+      padding-top: 17.5rem;
+   }
+
+   footer {
+      background-image: url(../images/footer-image-sm.png);
+      background-size: cover;
+      background-position: left;
+      background-repeat: no-repeat;
+   }
+
+   footer .content {
+      flex-direction: column;
+      padding: 3rem 0;
+   }
+
+   footer .content .text-grid {
+      margin-top: 3rem;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 2.5rem 0;
+   }
+
+}
