@@ -61,7 +61,7 @@ input {
    right: -8.8%;
 }
 
-.sm {
+.sm, .xs {
    display: none;
 }
 
@@ -104,6 +104,7 @@ input {
 
 .grid-box .grid-item {
    min-width: 0;
+   display: block;
 }
 
 #hero {
@@ -569,6 +570,10 @@ footer .content .text-grid .text .social img {
 
 @media only screen and (max-width: 600px) {
 
+   .xs {
+      display: inline;
+   }
+
    body {
       width: 100vw;
    }
@@ -651,6 +656,88 @@ footer .content .text-grid .text .social img {
    footer .content .text-grid .text .social img {
       margin-right: 1.5rem;
       margin-left: 0;
+   }
+
+
+   #gallery .grid-box, #shop .grid-box {
+      position: relative;
+      display: block;
+   }
+
+   #gallery .grid-box .grid-item, 
+   #shop .grid-box .grid-item {
+      display: none;
+   }
+
+   /* Next & previous buttons */
+   .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 40%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+   }
+   
+   /* Position the "next button" to the right */
+   .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+   }
+
+   /* Position the "next button" to the right */
+   .prev {
+      left: 0;
+      border-radius: 3px 0 0 3px;
+   }
+
+   /* Fading animation */
+   .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+   }
+   
+   @-webkit-keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+   }
+   
+   @keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+   }
+
+   /* The dots/bullets/indicators */
+
+   .dots {
+      display: block;
+      padding-top: 2.5rem;
+      text-align: center;
+   }
+   .dot, .dot2 {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+   }
+   
+   .active, .dot:hover {
+      background-color: #717171;
+   }
+
+   .active, .dot2:hover {
+      background-color: #717171;
    }
 
 }

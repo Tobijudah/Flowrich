@@ -5,6 +5,12 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="css/styles.css">
       <link href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@400;500&family=Raleway:ital@0;1&display=swap" rel="stylesheet">
+      <link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+			integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+			crossorigin="anonymous"
+		/>
       <title>Flowrich</title>
    </head>
 
@@ -82,43 +88,55 @@
 
          <div class="grid-box">
 
-            <div class="grid-item">
+            <div class="grid-item mySlides fade">
                <img src="images/gallery-item-1.png" alt="a flower">
                <h3>Bermuda Buttercup</h3>
                <p>Modern</p>
             </div>
             
-            <div class="grid-item">
+            <div class="grid-item mySlides fade">
                <img src="images/gallery-item-2.png" alt="a flower">
                <h3>Alsmeer Gold</h3>
                <p>Spring</p>
             </div>
             
-            <div class="grid-item">
+            <div class="grid-item mySlides fade">
                <img src="images/gallery-item-3.png" alt="a flower">
                <h3>Verbascum</h3>
                <p>Spring</p>
             </div>
             
-            <div class="grid-item">
+            <div class="grid-item mySlides fade">
                <img src="images/gallery-item-4.png" alt="a flower">
                <h3>Scarlet Pimpernel</h3>
                <p>Fresh</p>
             </div>
             
-            <div class="grid-item">
+            <div class="grid-item mySlides fade">
                <img src="images/gallery-item-5.png" alt="a flower">
                <h3>Bindweed</h3>
                <p>Modern</p>
             </div>
             
-            <div class="grid-item">
+            <div class="grid-item mySlides fade">
                <img src="images/gallery-item-6.png" alt="a flower">
                <h3>Stork's Bill</h3>
                <p>Spring</p>
             </div>
             
-         
+            <!-- Next and previous buttons -->
+            <a class="prev xs" onclick="plusSlides(-1)"><i class="fas fa-chevron-left fa-2x"></i></a>
+            <a class="next xs" onclick="plusSlides(1)"><i class="fas fa-chevron-right fa-2x"></i></a>
+         </div>
+
+         <!-- The dots/circles -->
+         <div style="text-align:center" class="xs dots">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+            <span class="dot" onclick="currentSlide(4)"></span> 
+            <span class="dot" onclick="currentSlide(5)"></span> 
+            <span class="dot" onclick="currentSlide(6)"></span> 
          </div>
          
       </section>
@@ -133,7 +151,7 @@
 
          <div class="grid-box">
 
-            <div class="grid-item">
+            <div class="grid-item mySlides2 fade">
                <img src="images/shop-item-1.png" alt="a flower for sale">
                <div class="item-text item-text-pink">
                   <h3>Gifts</h3>
@@ -141,7 +159,7 @@
                </div>
             </div>
             
-            <div class="grid-item">
+            <div class="grid-item mySlides2 fade">
                <img src="images/shop-item-2.png" alt="a flower for sale">
                <div class="item-text item-text-pink">
                   <h3>Decorations</h3>
@@ -149,7 +167,7 @@
                </div>
             </div>
 
-            <div class="grid-item">
+            <div class="grid-item mySlides2 fade">
                <img src="images/shop-item-3.png" alt="a flower for sale">
                <div class="item-text item-text-pink">
                   <h3>Shops</h3>
@@ -157,7 +175,7 @@
                </div>
             </div>
 
-            <div class="grid-item">
+            <div class="grid-item mySlides2 fade">
                <img src="images/shop-item-4.png" alt="a flower for sale">
                <div class="item-text item-text-green">
                   <h3>Weddings</h3>
@@ -165,7 +183,7 @@
                </div>
             </div>
 
-            <div class="grid-item">
+            <div class="grid-item mySlides2 fade">
                <img src="images/shop-item-5.png" alt="a flower for sale">
                <div class="item-text item-text-green">
                   <h3>Planters</h3>
@@ -173,7 +191,7 @@
                </div>
             </div>
 
-            <div class="grid-item">
+            <div class="grid-item mySlides2 fade">
                <img src="images/shop-item-6.png" alt="a flower for sale">
                <div class="item-text item-text-green">
                   <h3>Cormorant</h3>
@@ -181,7 +199,19 @@
                </div>
             </div>
 
+            <!-- Next and previous buttons -->
+            <a class="prev xs" onclick="plusSlides2(-1)"><i class="fas fa-chevron-left fa-2x"></i></a>
+            <a class="next xs" onclick="plusSlides2(1)"><i class="fas fa-chevron-right fa-2x"></i></a>
+         </div>
 
+         <!-- The dots/circles -->
+         <div style="text-align:center" class="xs dots">
+            <span class="dot2" onclick="currentSlide2(1)"></span> 
+            <span class="dot2" onclick="currentSlide2(2)"></span> 
+            <span class="dot2" onclick="currentSlide2(3)"></span> 
+            <span class="dot2" onclick="currentSlide2(4)"></span> 
+            <span class="dot2" onclick="currentSlide2(5)"></span> 
+            <span class="dot2" onclick="currentSlide2(6)"></span> 
          </div>
 
       </section>
@@ -320,6 +350,8 @@
          </div>
          
       </footer>
+
+      <script src="js/script.js"></script>
 
    </body>
 
