@@ -402,15 +402,14 @@ footer .content .text-grid .text .social img {
       justify-content: center;
       width: 50vw;
       min-width: 350px;
-      height: 95vh;
-      max-height: 900px;
+      min-height: 100vh;
       top: 0;
       right: 0;
       transition: display 5.4s;
    }
 
    #hero nav #nav-list li {
-      margin: 2rem;
+      margin: 1.5rem;
    }
 
    #hero nav a.icon {
