@@ -68,9 +68,7 @@ var func = function () {
     slides2[slideIndex2-1].style.display = "block"; 
     // dots2[slideIndex2-1].className += " active";
   }
-  }
-
-
+}
 
 
 var mq = window.matchMedia('all and (min-width: 600px)');
@@ -86,6 +84,7 @@ if(mq.matches) {
     }
 } else { func() }
 
+
 mq.addListener(function(changed) {
   if(changed.matches) {
       // the width of browser is more then 700px
@@ -100,6 +99,18 @@ mq.addListener(function(changed) {
   } else { func() }
   return
 });
+
+
+
+/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+function bar() {
+  var x = document.getElementById("nav-list");
+  if (x.style.display === "flex") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "flex";
+  }
+}
 
 
 
