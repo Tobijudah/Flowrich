@@ -670,7 +670,7 @@ footer .content .text-grid .text .social img {
    }
 
    /* Next & previous buttons */
-   .prev, .next {
+   .prev, .prev2, .next, .next2 {
       cursor: pointer;
       position: absolute;
       top: 40%;
@@ -685,13 +685,13 @@ footer .content .text-grid .text .social img {
    }
    
    /* Position the "next button" to the right */
-   .next {
+   .next, .next2 {
       right: 0;
       border-radius: 3px 0 0 3px;
    }
 
    /* Position the "next button" to the right */
-   .prev {
+   .prev, .prev2 {
       left: 0;
       border-radius: 3px 0 0 3px;
    }
