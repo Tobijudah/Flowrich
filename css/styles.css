@@ -48,6 +48,12 @@ input {
    width: 300px;
 }
 
+input::placeholder {
+   font-size: 1rem;
+   font-style: italic;
+   color: #324119;
+}
+
 .free-image-1 {
    position: absolute;
    z-index: -1;
@@ -388,6 +394,10 @@ footer .content .text-grid .text .social img {
       display: block;
    }
 
+   .pointer {
+      cursor: pointer;
+   }
+
    #hero nav {
       overflow: hidden;
    }
@@ -413,6 +423,7 @@ footer .content .text-grid .text .social img {
    }
 
    #hero nav a.icon {
+      margin: auto 0;
       margin-left: auto;
    }
 
@@ -605,6 +616,10 @@ footer .content .text-grid .text .social img {
 
    body {
       width: 100vw;
+   }
+
+   input::placeholder {
+      text-align: center;
    }
 
    .container {
