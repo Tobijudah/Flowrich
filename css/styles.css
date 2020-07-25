@@ -618,7 +618,7 @@ footer .content .text-grid .text .social img {
       width: 100vw;
    }
 
-   input::placeholder {
+   #contact input::placeholder {
       text-align: center;
    }
 
