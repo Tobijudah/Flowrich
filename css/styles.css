@@ -688,18 +688,19 @@ footer .content .text-grid .text .social img {
    }
 
 
-   #gallery .grid-box, #shop .grid-box {
+   #gallery .grid-box, #shop .grid-box, #clients .grid-box {
       position: relative;
       display: block;
    }
 
    #gallery .grid-box .grid-item, 
-   #shop .grid-box .grid-item {
+   #shop .grid-box .grid-item,
+   #clients .grid-box .grid-item {
       display: none;
    }
 
    /* Next & previous buttons */
-   .prev, .prev2, .next, .next2 {
+   .prev, .prev2, .prev3, .next, .next2, .next3 {
       cursor: pointer;
       position: absolute;
       top: 40%;
@@ -714,13 +715,13 @@ footer .content .text-grid .text .social img {
    }
    
    /* Position the "next button" to the right */
-   .next, .next2 {
+   .next, .next2, .next3 {
       right: 0;
       border-radius: 3px 0 0 3px;
    }
 
    /* Position the "next button" to the right */
-   .prev, .prev2 {
+   .prev, .prev2, .prev3 {
       left: 0;
       border-radius: 3px 0 0 3px;
    }

@@ -68,6 +68,41 @@ var func = function () {
     slides2[slideIndex2-1].style.display = "block"; 
     // dots2[slideIndex2-1].className += " active";
   }
+
+  
+  let slideIndex3 = 1;
+  showSlides3(slideIndex3);
+  
+  // Next/previous controls
+  function plusSlides3(n) {
+    showSlides3(slideIndex3 += n);
+  }
+
+  let p3 = document.querySelector('.prev3')
+  p3.onclick = function(){plusSlides3(-1)}
+  let n3 = document.querySelector('.next3')
+  n3.onclick = function(){plusSlides3(1)}
+  
+  // Thumbnail image controls
+  function currentSlide2(n) {
+    showSlides2(slideIndex2 = n);
+  }
+  
+  function showSlides3(n) {
+    let i3;
+    let slides3 = document.getElementsByClassName("mySlides3");
+    // let dots2 = document.getElementsByClassName("dot2");
+    if (n > slides3.length) {slideIndex3 = 1} 
+    if (n < 1) {slideIndex3 = slides3.length}
+    for (i = 0; i < slides3.length; i++) {
+        slides3[i].style.display = "none"; 
+    }
+    // for (i = 0; i < dots2.length; i++) {
+    //     dots2[i].className = dots2[i].className.replace(" active", "");
+    // }
+    slides3[slideIndex3-1].style.display = "block"; 
+    // dots2[slideIndex2-1].className += " active";
+  }
 }
 
 
@@ -76,11 +111,15 @@ if(mq.matches) {
     // the width of browser is more then 600px
     let slides = document.getElementsByClassName("mySlides");
     let slides2 = document.getElementsByClassName("mySlides2");
+    let slides3 = document.getElementsByClassName("mySlides3");
     for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "block"; 
     }
     for (i = 0; i < slides2.length; i++) {
       slides2[i].style.display = "block"; 
+    }
+    for (i = 0; i < slides3.length; i++) {
+      slides3[i].style.display = "block"; 
     }
 } else { func() }
 
@@ -90,11 +129,15 @@ mq.addListener(function(changed) {
       // the width of browser is more then 700px
       let slides = document.getElementsByClassName("mySlides");
     let slides2 = document.getElementsByClassName("mySlides2");
+    let slides3 = document.getElementsByClassName("mySlides3");
     for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "block"; 
     }
     for (i = 0; i < slides2.length; i++) {
       slides2[i].style.display = "block"; 
+    }
+    for (i = 0; i < slides3.length; i++) {
+      slides3[i].style.display = "block"; 
     }
   } else { func() }
   return
