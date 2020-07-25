@@ -7,7 +7,6 @@
 }
 
 body {
-   max-width: 1440px;
    margin: 0 auto;
    position: relative;
 }
@@ -75,6 +74,7 @@ input::placeholder {
 .container {
    width: 85%;
    margin: 0 auto;
+   max-width: 1440px;
 }
 
 .btn {
@@ -350,6 +350,8 @@ input::placeholder {
 
 footer {
    background-image: url(../images/footer-image.png);
+   background-repeat: no-repeat;
+   background-size: cover;
 }
 
 footer .content {
@@ -381,6 +383,14 @@ footer .content .text-grid .text h3 {
 footer .content .text-grid .text .social img {
    margin-right: 1.5rem;
    margin-bottom: 1rem;
+}
+
+@media only screen and (min-width: 2000px) {
+   #about .text-box .text {
+      margin: 0;
+      margin-left: auto;
+      padding-right: 4rem;
+   }
 }
 
 
