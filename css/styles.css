@@ -46,12 +46,17 @@ input {
    padding: 0.5rem 0;
    margin-bottom: 2.25rem;
    width: 300px;
+   font-size: 0.95rem;
 }
 
 input::placeholder {
    font-size: 1rem;
    font-style: italic;
    color: #324119;
+}
+
+input:focus {
+   outline: none;
 }
 
 .free-image-1 {
@@ -83,14 +88,27 @@ input::placeholder {
    padding: 1.625rem 3.5rem;
    border: none;
    font-size: 1rem;
+   cursor: pointer;
+}
+
+.btn:focus {
+   outline: none;
 }
 
 .btn-green, .item-text-green {
    background: #F1F8FF;
 }
 
+.btn-green:hover {
+   background: #e4edf6;
+}
+
 .btn-pink, .item-text-pink {
    background: #FBEDE2;
+}
+
+.btn-pink:hover {
+   background: #ffeddf;
 }
 
 .text-box .text p {
