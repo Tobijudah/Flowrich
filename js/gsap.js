@@ -25,6 +25,11 @@ onload.from('#heading h1', {
   y: -10,
   stagger: 0.05
 }, '-=0.5')
+.from('nav .icon', {
+  duration: 0.8,
+  opacity: 0,
+  x: 10,
+}, '-=1')
 
 about = gsap.timeline({
   scrollTrigger: {
@@ -84,15 +89,41 @@ me.from('#me h2', {
 }, '-=0.25')
 
 
-// gallery = gsap.timeline({
-//   scrollTrigger: {
-//     trigger: '#gallery',
-//     start: 'top 60%'
-//   },
-// })
+gallery = gsap.timeline({
+  scrollTrigger: {
+    trigger: '#gallery',
+    start: 'top 60%'
+  },
+})
 
-// gallery.from('#gallery .grid-box .grid-item', {
-//   opacity: 0,
-//   duration: 0.5,
-//   // stagger: 0.25
-// })
+gallery.from('#gallery h2', {
+  opacity: 0,
+  duration: 0.8,
+  y: 30
+})
+.from('#gallery .grid-box', {
+  opacity: 0,
+  duration: 1.2,
+  y: 50
+},'-=0.5')
+
+
+
+shop = gsap.timeline({
+  scrollTrigger: {
+    trigger: '#shop',
+    start: 'top 60%'
+  },
+})
+
+shop.from('#shop h2', {
+  opacity: 0,
+  duration: 0.8,
+  y: 30
+})
+.from('#shop .grid-box', {
+  opacity: 0,
+  duration: 1.2,
+  y: 50
+}, '-=0.5')
+
