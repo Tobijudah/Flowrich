@@ -388,10 +388,15 @@ footer .content .text-grid .text .social img {
 }
 
 @media only screen and (min-width: 2000px) {
+
    #about .text-box .text {
       margin: 0;
       margin-left: auto;
       padding-right: 4rem;
+   }
+
+   #contact .content .text-box {
+      padding-top: 15rem;
    }
 }
 
