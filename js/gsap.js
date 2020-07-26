@@ -9,7 +9,7 @@ mastertl = gsap.timeline()
 onload = gsap.timeline()
 
 onload.from('#heading h1', {
-  delay: 0.5,
+  delay: 0.8,
   duration: 1,
   opacity: 0,
   x: -20
@@ -127,3 +127,50 @@ shop.from('#shop h2', {
   y: 50
 }, '-=0.5')
 
+
+offer = gsap.timeline({
+  scrollTrigger: {
+    trigger: '#offer',
+    start: 'top 60%'
+  },
+})
+
+offer.from('#offer img', {
+  duration: 0.75,
+  opacity: 0,
+  y: 25,
+})
+.from('#offer h2', {
+  duration: 0.3,
+  opacity: 0,
+  y: 25,
+}, '-=0.4')
+.from('#offer p', {
+  duration: 0.5,
+  opacity: 0,
+  y: 25,
+}, '-=0.075')
+.from('#offer button', {
+  duration: 0.5,
+  opacity: 0,
+  y: 25,
+}, '-=0.075')
+
+
+clients = gsap.timeline({
+  scrollTrigger: {
+    trigger: '#clients',
+    start: 'top 60%'
+  },
+})
+
+clients.from('#clients h2', {
+  opacity: 0,
+  duration: 0.8,
+  y: 30
+})
+.from('#clients .grid-box', {
+  opacity: 0,
+  duration: 1.2,
+  y: 50
+}, '-=0.5')
