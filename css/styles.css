@@ -294,6 +294,8 @@ input::placeholder {
 
 #contact {
    background-image: url(../images/contact-box.png);
+   background-repeat: no-repeat;
+   background-size: cover;
    margin: 7rem 0;
    padding-bottom: 3.5rem;
 }
