@@ -141,20 +141,20 @@ offer.from('#offer img', {
   y: 25,
 })
 .from('#offer h2', {
-  duration: 0.3,
+  duration: 0.4,
   opacity: 0,
   y: 25,
 }, '-=0.4')
 .from('#offer p', {
-  duration: 0.5,
+  duration: 0.6,
   opacity: 0,
   y: 25,
-}, '-=0.075')
+}, '-=0.1')
 .from('#offer button', {
-  duration: 0.5,
+  duration: 0.6,
   opacity: 0,
   y: 25,
-}, '-=0.075')
+}, '-=0.1')
 
 
 clients = gsap.timeline({
@@ -173,4 +173,68 @@ clients.from('#clients h2', {
   opacity: 0,
   duration: 1.2,
   y: 50
+}, '-=0.5')
+
+
+
+
+contact = gsap.timeline({
+  scrollTrigger: {
+    trigger: '#contact',
+    start: 'top 60%'
+  },
+})
+
+contact.from('#contact h2', {
+  duration: 0.3,
+  opacity: 0,
+  y: 25,
+})
+.from('#contact p', {
+  duration: 0.5,
+  opacity: 0,
+  y: 25,
+  stagger: 0.1
+}, '-=0.1')
+.from('#contact form', {
+  duration: 0.5,
+  opacity: 0,
+  y: 25,
+}, '-=0.1')
+.from('#contact button', {
+  duration: 0.5,
+  opacity: 0,
+  y: 25,
+}, '-=0.35')
+.from('#contact .image', {
+  duration: 0.75,
+  opacity: 0,
+  y: 25,
+}, '-=0.45')
+
+
+newsletter = gsap.timeline({
+  scrollTrigger: {
+    trigger: '#newsletter',
+    start: 'top 75%'
+  },
+})
+
+newsletter.from('#newsletter', {
+  opacity: 0
+})
+.from('#newsletter h2', {
+  opacity: 0,
+  duration: 0.8,
+  y: 30
+}, '-=0.3')
+.from('#newsletter form', {
+  opacity: 0,
+  duration: 0.8,
+  y: 30
+}, '-=0.5')
+.from('#newsletter button', {
+  opacity: 0,
+  duration: 0.8,
+  y: 30
 }, '-=0.5')
