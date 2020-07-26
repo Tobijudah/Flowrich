@@ -9,6 +9,7 @@
 body {
    margin: 0 auto;
    position: relative;
+   visibility: hidden;
 }
 
 h1 {
