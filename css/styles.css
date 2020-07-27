@@ -108,7 +108,7 @@ input:focus {
 }
 
 .btn-pink:hover {
-   background: #ffeddf;
+   background: #fbe5d4;
 }
 
 .text-box .text p {
@@ -652,6 +652,10 @@ footer .content .text-grid .text .social img {
 
    body {
       width: 100vw;
+   }
+
+   #contact input {
+      text-align: center;
    }
 
    #contact input::placeholder {
